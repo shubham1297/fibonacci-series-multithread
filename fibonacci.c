@@ -24,8 +24,7 @@ void *calcFibo(void *vargp){
     fibo[1]=t2;
     top=1;
     int i=0;
-  //  printf("Fibonacci Series: %d, %d, ", t1, t2);
-
+  
     while(i <= *(int *)vargp)
     {
         nextTerm = t1 + t2;
