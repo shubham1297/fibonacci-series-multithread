@@ -1,3 +1,5 @@
+//Don't copy my code without my credit.
+
 #include <stdio.h>
 #include <unistd.h>
 #include <pthread.h>
