@@ -3,7 +3,7 @@
 
 
 #include <stdio.h>
-#include <unistd.h>
+#include<unistd.h>
 #include <pthread.h>
 #include <stdlib.h>
 pthread_t tid;
@@ -13,7 +13,8 @@ int top=-1;
 void *printFibo(void *vargp){
   pthread_join(tid2,NULL);
   sleep(1);
-  for(int i=0;i<=*(int*)vargp;i++){
+  for(int i=0;i<=*(int*)vargp;i++)
+{
     printf("%d",fibo[i]);
     printf(" ");
   }
@@ -24,7 +25,8 @@ void *calcFibo(void *vargp){
     fibo[1]=t2;
     top=1;
     int i=0;
-  
+
+
     while(i <= *(int *)vargp)
     {
         nextTerm = t1 + t2;
